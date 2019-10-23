@@ -1,0 +1,268 @@
+/**************variable color*********/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**************BODY *************************/
+body {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/**********************dark Mode Button   ***************/
+/******************* main container *************/
+.container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  display: line-block;
+  /***********************greeting(hello)**************/
+  /************************forjs class to remove class in js********/
+  /************************Welcome*** ****************/
+}
+
+.container .greeting {
+  color: #F15A24;
+  font-size: 100px;
+  font-family: 'Fascinate Inline', cursive;
+  display: inline-block;
+  margin: 0px;
+}
+
+.container .forjs:hover {
+  color: #000000;
+}
+
+.container .welcome {
+  color: #666666;
+  font-size: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: lighter;
+  display: inline-block;
+  margin: 0;
+  letter-spacing: 15px;
+  line-height: 40px;
+  word-spacing: 40px;
+  /******************** Welcome//////Hover********/
+  /************************Welcome //////  span********/
+}
+
+.container .welcome:hover {
+  color: #F9B463;
+}
+
+.container .welcome span {
+  color: #F9B463;
+}
+
+/*********************** Creative ********/
+.creative {
+  color: #000000;
+  font-weight: lighter;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  display: inline-block;
+  margin: 0;
+  line-height: 80px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  /******************** creative //////Hover********/
+}
+
+.creative:hover {
+  color: #F15A24;
+}
+
+/******************** Port ********/
+.port {
+  display: inline-block;
+  /******************** Port //////h5********/
+}
+
+.port h5 {
+  color: #CCCDCE;
+  font-weight: lighter;
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  margin: 0;
+  letter-spacing: -1.5px;
+  line-height: 50px;
+  /******************** Port ////// span ********/
+}
+
+.port h5:hover {
+  color: #F15A24;
+}
+
+.port h5:hover span {
+  color: #F15A24;
+}
+
+.port span {
+  color: #ADAFB1;
+  font-weight: 1000;
+  font-size: 35px;
+  word-spacing: 5px;
+  letter-spacing: 5.5px;
+}
+
+/******************** name ********/
+.name {
+  word-spacing: 40px;
+  display: inline-block;
+  margin-bottom: 30px;
+  /******************** name///hover for firstname(h6)********/
+  /******************** name///h4)********/
+}
+
+.name:hover {
+  color: #F15A24;
+}
+
+.name h4 {
+  color: #F15A24;
+  font-size: 40px;
+  font-family: 'Fascinate Inline', cursive;
+  margin: 0;
+  display: inline-block;
+  /******************** name///h6********/
+}
+
+.name h6 {
+  color: #666666;
+  font-size: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: lighter;
+  display: block;
+  margin: 0;
+  letter-spacing: 15px;
+  line-height: 40px;
+  -webkit-animation-name: underline;
+          animation-name: underline;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  position: relative;
+  display: inline-block;
+  /******************** name///h6///sudo element(afte) for firstname(h6)********/
+}
+
+.name h6:hover {
+  color: #F15A24;
+}
+
+.name h6::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  right: 2rem;
+  width: 95%;
+  height: 5px;
+  background-color: #F15A24;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.name h3 {
+  color: #F9B463;
+  font-weight: lighter;
+  font-size: 65px;
+  font-family: 'Fascinate Inline', cursive;
+  display: block;
+  margin: 0;
+  line-height: 80px;
+  letter-spacing: 10px;
+  line-height: 60px;
+}
+
+.name:hover h6::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+/******************Explore button********/
+.explore {
+  width: 200px;
+  height: 60px;
+  background-color: #666666;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 30px;
+  border-radius: 50px;
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.explore a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/*******************************************************************************
+*                                   ANIMATIOM                                  *
+********************************************************************************/
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+/*# sourceMappingURL=main.css.map */

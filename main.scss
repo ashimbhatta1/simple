@@ -1,0 +1,303 @@
+
+
+/**************variable color*********/ 
+$color1 : #F15A24;
+$color2 : #666666;
+$color3 : #000000;
+$color4 : #F9B463;
+$color5 : #CCCDCE;
+$color6 : #ADAFB1;
+
+
+*{
+   
+    box-sizing: border-box;
+    
+}
+
+
+
+/**************BODY *************************/
+body{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+/**********************dark Mode Button   ***************/
+
+   
+
+/******************* main container *************/
+.container{
+   justify-content: center;
+   text-align: center;
+   margin-top: 60px;
+   display: line-block;
+
+
+   /***********************greeting(hello)**************/
+    .greeting{
+         color: $color1;
+        font-size: 100px;
+        font-family: 'Fascinate Inline', cursive;
+        display: inline-block;
+        margin: 0px;
+    }
+
+
+/************************forjs class to remove class in js********/
+    .forjs{
+        &:hover{
+            color: $color3;
+        }
+    }
+
+
+
+/************************Welcome*** ****************/
+
+    .welcome{
+       
+       color:$color2;
+        font-size: 50px;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: lighter;
+        display: inline-block;
+        margin: 0;
+        letter-spacing: 15px;
+        line-height: 40px;
+        word-spacing: 40px;  
+
+
+/******************** Welcome//////Hover********/
+
+        &:hover{
+            color: $color4;
+        }
+
+       
+ 
+/************************Welcome //////  span********/      
+        span{
+            color:$color4;
+
+          
+        }
+    }
+}
+
+
+/*********************** Creative ********/
+.creative{
+    color: $color3;
+    font-weight: lighter;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    margin: 0;
+    line-height: 80px;
+    letter-spacing: 10px;
+    line-height: 60px;
+
+
+
+    /******************** creative //////Hover********/
+
+    &:hover{
+        color: $color1;
+    }
+    
+
+}
+
+/******************** Port ********/
+
+.port{
+
+   
+    display: inline-block;
+
+    /******************** Port //////h5********/
+   
+    h5{
+        color:$color5;
+        font-weight:lighter ;
+        font-size: 35px;
+        font-family: 'Oswald', sans-serif;
+        display: block;
+        margin: 0;
+        letter-spacing:-1.5px;
+        line-height: 50px;
+        &:hover{
+            color: $color1;
+        }
+        &:hover span{
+            color: $color1;
+        }
+
+
+            /******************** Port ////// span ********/
+
+    }
+    span{
+        color:$color6;
+        font-weight: 1000;
+        font-size: 35px;
+        word-spacing: 5px;
+        letter-spacing:5.5px;
+
+       
+        
+    }
+}
+
+
+
+/******************** name ********/
+
+.name{
+    word-spacing: 40px;
+    display: inline-block;
+    margin-bottom: 30px;
+
+        /******************** name///hover for firstname(h6)********/
+
+    &:hover{
+        color: $color1;
+    }
+
+
+     /******************** name///h4)********/
+    h4{
+        color: $color1;
+        font-size: 40px;
+        font-family: 'Fascinate Inline', cursive;
+        margin: 0;
+        display: inline-block;
+
+       
+       
+        
+    /******************** name///h6********/
+    }
+    h6{
+        color:$color2;
+        font-size: 50px;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: lighter;
+        display: block;
+        margin: 0;
+        letter-spacing: 15px;
+        line-height: 40px;
+        animation-name: underline;
+        animation-duration: 300ms;
+        position: relative;
+        
+        display: inline-block;
+
+
+        &:hover{
+            color: $color1;
+        }
+
+       
+
+ /******************** name///h6///sudo element(afte) for firstname(h6)********/
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left:-5px;
+            right:2rem;
+            width: 95%;
+            height: 5px;
+            background-color:$color1;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 300ms;
+
+          
+        }
+    }
+    h3{
+        color: $color4;
+        font-weight: lighter;
+        font-size: 65px;
+        font-family: 'Fascinate Inline', cursive;
+        display: block;
+        margin: 0;
+        line-height: 80px;
+        letter-spacing: 10px;
+        line-height: 60px;
+        
+        
+    
+    }
+
+
+    &:hover h6::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+
+/******************Explore button********/
+
+
+.explore{
+    width: 200px;
+    height: 60px;
+    background-color:$color2;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 30px;
+    border-radius: 50px;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    animation-iteration-count: infinite;
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+*                                   ANIMATIOM                                  *
+********************************************************************************/
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+

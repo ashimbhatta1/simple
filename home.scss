@@ -1,0 +1,280 @@
+/**************variable color*********/ 
+$color1 : #F15A24;
+$color2 : #666666;
+$color3 : #000000;
+$color4 : #F9B463;
+$color5 : #CCCDCE;
+$color6 : #ADAFB1;
+
+
+*,body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background:transparent;
+    
+}
+body{
+    display: flex;
+  color:$color1;
+  font-family: 'Rajdhani', sans-serif;
+  user-select: none;
+  
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    min-width: 200px;
+    border-right: 1px solid grey;
+    height: 100vh;
+    position: sticky;
+    left: 0px;
+    padding: 0px 40px;
+    
+
+        .logo{
+            margin-bottom: 50px;
+           
+
+
+            h1{
+                font-size: 55px;
+                font-family: 'Oswald', sans-serif;
+                margin: 0%;
+                display: inline-block;
+            
+
+            }
+            h3{
+                margin: 0%;
+                display: inline-block;
+                color: black;
+                font-size: 46px;
+                line-height:35px;
+                font-family: 'Zilla Slab Highlight', cursive;
+
+            }
+        }
+
+
+        .menu{
+            margin-top: 50px;
+            font-weight: 680;
+            color: black;
+
+            ul{
+
+
+                li{
+
+                    margin: 7px 0px;
+                    font-size: 13px;
+                    list-style: none;
+
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        position: relative;
+                        letter-spacing: 3px;
+
+
+                        &::after{
+                            content: "";
+                            width: 100%;
+                            height: 2px;
+                            position: absolute;
+                            bottom: 0px;
+                            left: 0px;;
+                            background: $color1;
+                            transform-origin: left;
+                            transform: scaleX(0);
+                            transition: 300ms;
+                        }
+                    }
+
+                    &:hover a::after{
+                        transform: scaleX(1);
+                        transform-origin: right;
+                    }
+
+                }
+            }
+        }
+
+        
+}
+
+
+.home{
+    margin: 100px 20px;
+    color: $color3;
+    font-family: 'Baloo Bhai', cursive;
+    
+
+    .welcome{
+        font-size: 100px;
+        font-weight: bolder;
+        margin: 0;
+        letter-spacing: 2px;
+    } 
+    .home{
+        font-size: 100px;
+        font-weight: bolder;
+        margin-top: -100px;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 42px;
+        font-weight: 1000;
+        margin-top: -110px;
+        letter-spacing: 1px;
+        font-family: 'Bitter', serif;
+        text-transform: uppercase;
+
+        .one{
+            color: grey;
+            font-size: 38px;
+            
+
+        }
+        .two{
+            font-size: 39px;
+            word-spacing: 10px;
+            color: $color1;
+        }
+       
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/************************************************************
+            RESPONSIVE DESGIN
+
+
+
+/////////////////////////////////////////////////////////////*/
+
+
+
+
+@media screen and (min-width: 970px) {
+    .home{
+        margin: 10px 50px;
+        
+        .welcome{
+        font-size: 150px;
+        }
+        .home{
+            font-size: 150px;
+            margin-top: -150px;
+        }
+        p{
+            font-size: 62px;
+            margin-top: -90px;
+            letter-spacing: 2px;
+        
+    
+            .one{
+                 font-size: 58px;
+            }
+
+            .two{
+                font-size: 58px;
+                
+            }
+            .home{
+                font-size: 130px;
+               
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    .nav{
+        min-width: 120px;
+        padding: 10px;
+       .logo{
+                margin-bottom: 50px;
+               
+    
+    
+                h1{
+                    font-size: 40px;
+                    
+    
+                }
+                h3{
+                  
+                    font-size: 35px;
+                    line-height:30px;
+                    
+    
+                }
+            }
+    
+    
+            .menu{
+                
+                font-weight: 680;
+
+                ul{
+                    li{
+                        font-size: 19px;
+                        a{
+                            letter-spacing:  -1px;
+                        }
+                    }
+                }
+                
+            }
+    
+            
+    }
+
+    .home{
+        margin: 40px 5px;
+        
+        .welcome{
+        font-size: 60px;
+        }
+        .home{
+            font-size: 80px;
+            margin-top: -80px;
+        }
+        p{
+            font-size: 30px;
+            margin-top: -30px;
+            letter-spacing: 0px;
+        
+    
+            .one{
+                 font-size: 29px;
+            }
+
+            .two{
+                font-size: 31px;
+                
+            }
+            
+        }
+    }
+
+
+
+}
+
+
+
